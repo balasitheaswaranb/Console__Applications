@@ -12,7 +12,7 @@ public class ManageExpense {
      InputController inputController;
 
 	public ManageExpense() {
-		expenseController = new ExpenseController();
+		expenseController = new ExpenseController(this);
 		inputController = new InputController();
 	}
 

@@ -5,15 +5,14 @@ import java.util.Iterator;
 import com.contact.controller.Process;
 import com.contact.model.ContactDetails;
 
-public class UserView {
+public class ManageView {
 	Process process;
 
-	UserView() {
+	ManageView() {
 		process = new Process();
 	}
 
 	protected void printAllContacts() {
-		Process process = new Process();
 		Iterator<ContactDetails> contactsIterator = process.getContactsArrayList().iterator();
 		while (contactsIterator.hasNext()) {
 			ContactDetails nextContact = contactsIterator.next();

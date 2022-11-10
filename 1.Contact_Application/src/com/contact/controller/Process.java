@@ -10,8 +10,6 @@ public class Process {
     ContactDetails contactdetails;
 	Database database = Database.getInstance();
 
-
-
 	public void addNewContact(String name, String mobileNumber) {
 		ContactDetails resultLoop = iterateContacts(name);
 		if (resultLoop != null) {

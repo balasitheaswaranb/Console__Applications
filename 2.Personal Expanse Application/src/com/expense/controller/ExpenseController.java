@@ -10,10 +10,13 @@ public class ExpenseController {
     ManageExpense manageExpense;
 	ExpenseDatas expenseDatas;
 	
+	public ExpenseController(ManageExpense manageExpense) {
+		manageExpense=this.manageExpense;
+	}
+
 	public void toAddTransaction() {
 		
 		expenseDatas = new ExpenseDatas();
-		manageExpense = new ManageExpense();
 		expenseDatas.setDate(manageExpense.getInput("Date of Transaction (DD/MM/YYYY) : ",
 				"(0[1-9]|[12][0-9]|3[01])[/](0[1-9]|1[012])[/][0-9]{4}"));
 		expenseDatas.setKind(manageExpense.getInput("Kind (Income/Expense) : ", "Income|Expense|income|expense"));

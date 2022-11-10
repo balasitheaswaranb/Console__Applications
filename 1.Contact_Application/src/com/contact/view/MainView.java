@@ -7,10 +7,10 @@ import com.contact.model.Database;
 
 public class MainView {
 	Scanner scanner = new Scanner(System.in);
-	UserInput userInput;
+	ManageInput userInput;
 	
 	MainView() {
-		userInput = new UserInput();
+		userInput = new ManageInput();
 	}
 	
 	protected void initiate() {
@@ -31,7 +31,7 @@ public class MainView {
 				printOptions();
 				break;
 			case 1:
-				new UserView().printAllContacts();
+				new ManageView().printAllContacts();
 				break;
 			case 2:
 				userInput.addContacts();

@@ -5,12 +5,12 @@ import java.util.Scanner;
 import com.contact.controller.InputValidation;
 import com.contact.controller.Process;
 
-public class UserInput {
+public class ManageInput {
 	Scanner scanner = new Scanner(System.in); 
 	Process process;
 	InputValidation validation;
 
-	UserInput() {
+	ManageInput() {
 		process = new Process();
 		validation = new InputValidation();
 	}
@@ -45,7 +45,7 @@ public class UserInput {
 	}
 
 	protected void findContact() {
-        UserView view = new UserView();
+        ManageView view = new ManageView();
 		System.out.print("Type a contact name to find: ");
 		view.searchContact(getStringValue().toLowerCase());
 		printMenu();
@@ -57,7 +57,7 @@ public class UserInput {
 				+ "[3]Remove favourite\n Enter the option : ");
 		String contactType = "", option = getStringValue();
 		if (option.equals("1")) {
-			UserView view = new UserView();
+			ManageView view = new ManageView();
 			contactType = "Favourite";
 			view.searchFavourite(contactType);
 		} else if (option.equals("2")) {
