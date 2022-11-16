@@ -1,10 +1,14 @@
-contact management application
+Description of project
 
-This application is only for user porpose only 
-1. Able to store contacts, 
-2. modify contacts, 
-3. remove contacts
-4. Search contact through names and starting characters,
-5. print the list of all the contacts.
-The contact details are stored in database using mysql 
+A Java based console application that manages an contacts on database.
 
+Functionality
+
+1.Print all available contacts
+2.Add new contact
+3.Add to favourite contacts
+4.Search contact based on name
+5.Edit contact based on name
+6.Edit favourite contacts
+7.Delete contact based on name
+8.Remove from favourite
